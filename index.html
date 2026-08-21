@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مكتبتي | منصة الكتب</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header class="header">
+    <div class="container nav">
+        <a href="#" class="logo">📚 مكتبتي</a>
+
+        <nav>
+            <a href="#home">الرئيسية</a>
+            <a href="#books">الكتب</a>
+            <a href="#categories">التصنيفات</a>
+            <a href="#about">عن المنصة</a>
+        </nav>
+
+        <div class="nav-actions">
+            <button id="themeBtn" class="icon-btn">🌙</button>
+            <button id="loginBtn" class="login-btn">تسجيل الدخول</button>
+        </div>
+
+        <button class="menu-btn" id="menuBtn">☰</button>
+    </div>
+</header>
+
+<main>
+
+<section class="hero" id="home">
+    <div class="container hero-content">
+
+        <div class="hero-text">
+            <span class="badge">📖 عالم من المعرفة بين يديك</span>
+
+            <h1>
+                اكتشف كتابك
+                <span>المفضل</span>
+                وابدأ رحلة المعرفة
+            </h1>
+
+            <p>
+                منصة عربية بسيطة وسريعة لاكتشاف الكتب،
+                قراءة معلومات عنها وحفظ كتبك المفضلة في مكان واحد.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#books" class="primary-btn">استكشف الكتب ←</a>
+                <a href="#categories" class="secondary-btn">التصنيفات</a>
+            </div>
+        </div>
+
+        <div class="hero-image">
+            <div class="book-stack">
+                <div class="floating-book book-one">📕</div>
+                <div class="floating-book book-two">📗</div>
+                <div class="floating-book book-three">📘</div>
+                <div class="big-book">📚</div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section class="features">
+    <div class="container features-grid">
+
+        <div class="feature">
+            <div>📚</div>
+            <h3>آلاف الكتب</h3>
+            <p>اكتشف مجموعة متنوعة من الكتب.</p>
+        </div>
+
+        <div class="feature">
+            <div>🔎</div>
+            <h3>بحث سريع</h3>
+            <p>ابحث عن الكتاب الذي تريده بسهولة.</p>
+        </div>
+
+        <div class="feature">
+            <div>❤️</div>
+            <h3>المفضلة</h3>
+            <p>احفظ كتبك المفضلة للوصول إليها لاحقاً.</p>
+        </div>
+
+        <div class="feature">
+            <div>📱</div>
+            <h3>متجاوبة</h3>
+            <p>تعمل بشكل ممتاز على الهاتف والكمبيوتر.</p>
+        </div>
+
+    </div>
+</section>
+
+<section class="books-section" id="books">
+    <div class="container">
+
+        <div class="section-title">
+            <div>
+                <span>مكتبتنا</span>
+                <h2>اكتشف أفضل الكتب</h2>
+            </div>
+        </div>
+
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="🔎 ابحث عن كتاب أو مؤلف...">
+            <select id="categoryFilter">
+                <option value="all">كل التصنيفات</option>
+                <option value="روايات">روايات</option>
+                <option value="تطوير الذات">تطوير الذات</option>
+                <option value="تاريخ">تاريخ</option>
+                <option value="علوم">علوم</option>
+            </select>
+        </div>
+
+        <div class="books-grid" id="booksGrid"></div>
+
+        <div class="empty" id="empty">
+            <div>📚</div>
+            <h3>لا توجد كتب</h3>
+            <p>جربي البحث بكلمة أخرى.</p>
+        </div>
+
+    </div>
+</section>
+
+<section class="categories" id="categories">
+    <div class="container">
+
+        <div class="section-title center">
+            <span>التصنيفات</span>
+            <h2>اختار مجال القراءة المفضل لديك</h2>
+        </div>
+
+        <div class="categories-grid">
+
+            <div class="category-card" data-category="روايات">
+                <span>📖</span>
+                <h3>روايات</h3>
+                <p>قصص وروايات ممتعة</p>
+            </div>
+
+            <div class="category-card" data-category="تطوير الذات">
+                <span>🧠</span>
+                <h3>تطوير الذات</h3>
+                <p>طوّر نفسك ومهاراتك</p>
+            </div>
+
+            <div class="category-card" data-category="تاريخ">
+                <span>🏛️</span>
+                <h3>تاريخ</h3>
+                <p>تعرف على الماضي</p>
+            </div>
+
+            <div class="category-card" data-category="علوم">
+                <span>🔬</span>
+                <h3>علوم</h3>
+                <p>اكتشف عالم العلوم</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="about" id="about">
+    <div class="container about-content">
+        <div class="about-icon">📚</div>
+
+        <div>
+            <span>عن مكتبتي</span>
+            <h2>القراءة بداية كل معرفة</h2>
+            <p>
+                مكتبتي هي منصة Front-End تجريبية تهدف إلى تسهيل
+                اكتشاف الكتب وتنظيمها بطريقة عصرية وسهلة الاستخدام.
+            </p>
+        </div>
+    </div>
+</section>
+
+</main>
+
+<footer>
+    <div class="container footer-content">
+        <div>
+            <h2>📚 مكتبتي</h2>
+            <p>منصة الكتب الخاصة بك.</p>
+        </div>
+
+        <p>© 2026 جميع الحقوق محفوظة</p>
+    </div>
+</footer>
+
+<div class="modal" id="loginModal">
+    <div class="modal-content">
+
+        <button class="close" id="closeModal">×</button>
+
+        <div class="modal-icon">📚</div>
+
+        <h2>أهلاً بك في مكتبتي</h2>
+        <p>سجل الدخول لحفظ كتبك المفضلة.</p>
+
+        <form id="loginForm">
+            <input type="email" placeholder="البريد الإلكتروني" required>
+            <input type="password" placeholder="كلمة المرور" required>
+            <button type="submit" class="primary-btn full">تسجيل الدخول</button>
+        </form>
+
+        <p class="success" id="successMsg"></p>
+
+    </div>
+</div>
+
+<script src="js/app.js"></script>
+</body>
+</html>
